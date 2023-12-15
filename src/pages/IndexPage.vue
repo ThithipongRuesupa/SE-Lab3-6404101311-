@@ -1,4 +1,5 @@
 <template>
+  
   <div class="q-pa-md" style="max-width: 400px">
 
     <q-form
@@ -8,12 +9,22 @@
     >
       <q-input
         filled
-        v-model="name"
         label="ชื่อ-สกุล *"
-        hint="ชื่อและนามสกุล"
+       v-model="name"
+         hint="ชื่อและนามสกุล"
         lazy-rules
         :rules="[ val => val && val.length > 0 || 'กรุณาพิมพ์ชื่อ']"
       />
+
+      <q-input
+        filled
+        label="name-surname *"
+       v-model="name"
+         hint="name and surename"
+        lazy-rules
+        :rules="[ val => val && val.length > 0 || 'pleas enter ur name']"
+      />
+
 
       <q-input
         filled
