@@ -1,4 +1,3 @@
-# เปลี่ยนข้อความในฟอร์เป็นภาษาไทย
 <template>
   <div class="q-pa-md" style="max-width: 400px">
 
