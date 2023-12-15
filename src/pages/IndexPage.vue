@@ -19,13 +19,14 @@
         filled
         type="number"
         v-model="age"
-        label="Your age *"
+        label="你的年齡 *"
         lazy-rules
         :rules="[
-          val => val !== null && val !== '' || 'Please type your age',
-          val => val > 0 && val < 100 || 'Please type a real age'
+          val => val !== null && val !== '' || '請輸入您的年齡',
+          val => val > 0 && val < 100 || '請輸入真實年齡'
         ]"
       />
+
 
       <q-toggle v-model="accept" label="ยอมรับ" />
 
